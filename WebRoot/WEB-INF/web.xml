@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <filter>
+  	<filter-name>MyFilter</filter-name>
+  	<filter-class>LinkedIn.Login.Filter.MyFilter</filter-class>
+  	
+  </filter>
+ 
+  <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern> /BlogPage.jsp</url-pattern>   
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern> /FriendList.jsp</url-pattern>   
+  	</filter-mapping>
+  <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern> /homepage.jsp</url-pattern>   
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern> /ModifyPage.jsp</url-pattern>   
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern> /main.jsp</url-pattern>   
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern> /ForumPage.jsp</url-pattern>   
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern> /ReplyPage.jsp</url-pattern>   
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern>/AboutUs.jsp</url-pattern>   
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern>/servlet/ModifyAction</url-pattern>
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern>/servlet/FriendListAction</url-pattern>   
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern>/servlet/BlogAction</url-pattern>   
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>MyFilter</filter-name>
+  	<url-pattern>/servlet/FrogAction</url-pattern>   
+  </filter-mapping>
+
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.RegisterAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FriendListAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.FriendListAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MessagesAction</servlet-name>
+       <servlet-class>LinkedIn.Contact.chat.MessagesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.DeleteAction</servlet-class>
+  </servlet>
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.SearchAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.AddAction</servlet-class>
+  </servlet>
+
+
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublishServlet</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.PublishServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BlogAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.BlogAction</servlet-class>
+  </servlet>
+
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>modifyPassword</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.modifyPassword</servlet-class>
+  </servlet>
+
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>modifyPerProAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.modifyPerProAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.ModifyAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddForgAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.AddForgAction</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FrogAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.FrogAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReplyAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.ReplyAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FrogDetailAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.FrogDetailAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddReplyAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.AddReplyAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>changeHeadAction</servlet-name>
+    <servlet-class>LinkedIn.Login.Action.changeHeadAction</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>modifyPerProAction</servlet-name>
+    <url-pattern>/servlet/modifyPerProAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>modifyPassword</servlet-name>
+    <url-pattern>/servlet/modifyPassword</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>PublishServlet</servlet-name>
+    <url-pattern>/PublishServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessagesAction</servlet-name>
+    <url-pattern>/MessagesAction</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/servlet/RegisterAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/servlet/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FriendListAction</servlet-name>
+    <url-pattern>/servlet/FriendListAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAction</servlet-name>
+    <url-pattern>/servlet/DeleteAction</url-pattern>
+  </servlet-mapping>	
+  <servlet-mapping>
+    <servlet-name>SearchAction</servlet-name>
+    <url-pattern>/servlet/SearchAction</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>AddAction</servlet-name>
+    <url-pattern>/servlet/AddAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BlogAction</servlet-name>
+    <url-pattern>/servlet/BlogAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyAction</servlet-name>
+    <url-pattern>/servlet/ModifyAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddForgAction</servlet-name>
+    <url-pattern>/servlet/AddForgAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>FrogAction</servlet-name>
+    <url-pattern>/servlet/FrogAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReplyAction</servlet-name>
+    <url-pattern>/servlet/ReplyAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FrogDetailAction</servlet-name>
+    <url-pattern>/servlet/FrogDetailAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddReplyAction</servlet-name>
+    <url-pattern>/servlet/AddReplyAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>changeHeadAction</servlet-name>
+    <url-pattern>/servlet/changeHeadAction</url-pattern>
+  </servlet-mapping>
+  
+ 
+
+</web-app>

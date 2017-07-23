@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="LinkedIn"
+  id="myeclipse.1468571472431"
+  context-root="/LinkedIn"
+  j2ee-spec="5.0"
+  archive="LinkedIn.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

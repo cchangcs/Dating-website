@@ -1,0 +1,104 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300); 
+.pane2{
+  position: relative;top: 0;bottom: 0;left: 0;right: 0;
+  width: 600px; 
+  height: 150px;
+  padding: 50px;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  background: #4eb6b7 
+  box-shadow: 1px 1px 100px rgba(255,255,255,1), inset  1px 1px 60px rgba(255,255,255,.4);
+}
+.wrap{ 
+  margin-top:0px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;  
+  background: #4eb6b7;
+  box-shadow: -1px -1px 1px rgba(0,0,0,.4),
+              1px 1px 1px rgba(255,255,255,.4);
+}
+.wrap:after,
+.wrap:before{
+  content: 'STUDENT NUMBER INPUT AREA';
+  display: block;
+  position: absolute;
+  top: 0;left: 0;
+  overflow: hidden;
+  line-height: 44px;
+  color:rgba(255,255,255,0.7);
+  font-size: 20px;
+  width: 100%;height: 50%;
+  background: #4eb6b7;
+  z-index: 1;
+  box-shadow: 1px 1px 100px rgba(78,182,183,1);
+  transition:.3s all;
+  -webkit-transition:.3s all;
+  -webkit-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0);
+}
+.wrap:before{
+  top: auto;
+  bottom: 0;
+  line-height: 0px;
+}
+.wrap:hover:after{
+  top: -50%;
+}
+.wrap:hover:before{
+  bottom: -50%;
+}
+.wrap1{ 
+  margin-top:0px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;  
+  background: #4eb6b7;
+  box-shadow: -1px -1px 1px rgba(0,0,0,.4),
+              1px 1px 1px rgba(255,255,255,.4);
+}
+.wrap1:after,
+.wrap1:before{
+  content: 'STUDENT NAME INPUT AREA';
+  display: block;
+  position: absolute;
+  top: 0;left: 0;
+  overflow: hidden;
+  line-height: 44px;
+  color:rgba(255,255,255,0.7);
+  font-size: 20px;
+  width: 100%;height: 50%;
+  background: #4eb6b7;
+  z-index: 1;
+  box-shadow: 1px 1px 100px rgba(78,182,183,1);
+  transition:.3s all;
+  -webkit-transition:.3s all;
+  -webkit-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0);
+}
+.wrap1:before{
+  top: auto;
+  bottom: 0;
+  line-height: 0px;
+}
+.wrap1:hover:after{
+  top: -50%;
+}
+.wrap1:hover:before{
+  bottom: -50%;
+}
+input{
+  width: 100%;
+  height: 60px;
+  padding: 0 65px 0 10px;
+  font-size: 16px;
+  border:0;
+  box-shadow: inset 1px 1px 11px rgba(0,0,0,.3);  
+} 
+input:focus { 
+  outline: none; 
+}
+	
+
+html{ height: 100%; margin: 0; padding: 0;font-family: "Î¢ÈíÑÅºÚ", sans-serif;}
